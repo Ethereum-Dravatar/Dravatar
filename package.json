@@ -1,0 +1,22 @@
+{
+  "name": "dravatar-server",
+  "version": "1.0.0",
+  "description": "Avatar for ethereum account",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frank Wei <frank@frankwei.xyz>",
+  "license": "MIT",
+  "dependencies": {
+    "eth-sig-util": "^1.4.2",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.5",
+    "leancloud-storage": "^3.6.5",
+    "leanengine": "^3.1.1",
+    "superagent": "^3.8.2"
+  }
+}
