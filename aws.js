@@ -2,8 +2,6 @@
 // Credit to https://gist.github.com/SylarRuby/b60eea29c1682519e422476cc5357b60
 const AWS = require('aws-sdk')
 const config = require('./config')
-const { resizeAndGetBuffer } = require('./convertPhoto')
-
 
 // Configure AWS with your access and secret key. I stored mine as an ENV on the server
 // ie: process.env.ACCESS_KEY_ID = "abcdefg"
