@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 aws-key.*
 key.json
+/src/**/*.js
 # Editor directories and files
 .idea
 .vscode

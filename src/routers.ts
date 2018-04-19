@@ -1,10 +1,11 @@
-var Router = require('koa-router');
+import Router from "koa-router";
 var router = new Router();
-const fs = require('fs');
+import fs from "fs";
+import { getImageBuffer, getTokenFromAuthorization, uploadAvatarToAwsS3 } from "./utils";
 
-const asyncBusboy = require('async-busboy')
-const { getImageBuffer, getTokenFromAuthorization, uploadAvatarToAwsS3 } = require('./utils')
-const { getAddressFromSignature } = require('./utils/signature')
+// @TODO: add type declaration for these module blow 
+import asyncBusboy from "async-busboy";
+import { getAddressFromSignature } from "./utils/signature";
 
 router.post('/updateAvatar', async (ctx, next) => {
     const body = ctx.request.body
@@ -32,7 +33,5 @@ router.post('/updateAvatar', async (ctx, next) => {
     }
 });
 
-module.exports = {
-    routerRules: router.routes(),
-    allowedMethods: router.allowedMethods()
-}
+export const routerRules = router.routes();
+export const allowedMethods = router.allowedMethods();

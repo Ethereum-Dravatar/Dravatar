@@ -1,24 +1,10 @@
 
-// import config from "../config";
-
 import { readFileSync } from "fs";
 // function to encode file data to base64 encoded string
+import { Signature, convertSignToSignObject } from "./signature";
 
-interface Signature {
-    id?: string,
-    jsonrpc?: string,
-    result: string
-}
 
-const convertSignToSignObject = (sign: string): Signature => {
-    return {
-        id: undefined,
-        jsonrpc: undefined,
-        result: sign
-    }
-}
-
-const getTokenFromAuthorization = (authorization: string): Signature | null => {
+export const getTokenFromAuthorization = (authorization: string): Signature | null => {
     if (authorization === undefined) {
         return null
     } else {
