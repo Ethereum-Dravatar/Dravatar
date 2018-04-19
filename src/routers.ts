@@ -18,7 +18,7 @@ router.post('/updateAvatar', async (ctx, next) => {
         const addr = getAddressFromSignature(signature)
         const result = await uploadAvatarToAwsS3(addr, file['path'])
         const obj = {
-            Code: 200,
+            code: 200,
             address: addr
         }
         console.log(obj)
