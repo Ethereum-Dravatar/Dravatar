@@ -12,5 +12,7 @@ install:
 
 script:
 - yarn global add typescript
-- echo "export const ACCESS_KEY :string = "FOO"\n export const SECRET_KEY :string = "COOL"" >> ./src/config/aws-key.ts
+- cd ./src/config
+- wget https://gist.githubusercontent.com/frankwei98/df0bcf18f2ad77d32b6245eeaa9be6a5/raw/3964a3a0ad9370d6ac0e28f5d1d3ba7f5e564789/aws-key.ts
+- cd ../../
 - tsc
