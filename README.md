@@ -1,5 +1,5 @@
 # Dravatar-Backend
-[![Build Status](https://travis-ci.org/frankwei98/Dravatar-BE.svg?branch=master)](https://travis-ci.org/frankwei98/Dravatar-BE)
+[![Build Status](https://travis-ci.org/Ethereum-Dravatar/Dravatar.svg?branch=master)](https://travis-ci.org/Ethereum-Dravatar/Dravatar)
 
 Refactoring, still in beta, not ready for production.
 
